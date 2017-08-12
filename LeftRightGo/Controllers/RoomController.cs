@@ -11,7 +11,9 @@ namespace LeftRightGo.Controllers
         {
             var model = new RoomViewModel
             {
-                Name = id.ToString()
+                //Reaction = $"Hello, {name}",
+                Name = id.ToString(),
+                Question = "How are you??"
             };
 
             return View(model);

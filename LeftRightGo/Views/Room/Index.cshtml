@@ -5,4 +5,39 @@
     Layout = "_Layout";
 }
 
-Hello.
+<form>
+    <div class="container text-center" style="max-width: 600px">
+        <div class="row">
+            <h2>
+                @Model.Name
+            </h2>
+        </div>
+        <br /><br />
+
+        <div class="well well-lg">
+            <div class="row">
+                <h3>
+                    @Model.Question
+                </h3>
+            </div>
+            <br /><br />
+
+            <div class="row">
+                <div class="input-group">
+                    <input type="text" autofocus="" class="form-control">
+                    <span class="input-group-btn">
+                        <button type="submit" class="btn btn btn-default">
+                            <span class="glyphicon glyphicon-ok"></span>
+                        </button>
+                    </span>
+                </div>
+            </div>
+            <br /><br /><br /><br /><br /><br />
+        </div>
+        
+        @Model.Reaction
+        
+        @*<a href="" class="btn btn-default" >Left</a>
+        <a href="" class="btn btn-default" >Right</a>*@
+    </div>
+</form>

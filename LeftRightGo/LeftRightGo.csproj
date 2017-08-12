@@ -8,6 +8,12 @@
   <PropertyGroup>
     <UserSecretsId>aspnet-LeftRightGo-b43f0a71-63cd-4b82-9235-9516f0f40276</UserSecretsId>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="wwwroot\favicon.ico" />
+    <Content Include="wwwroot\favicon.png" />
+    <Content Include="wwwroot\square.png" />
+  </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.0.0" />
     <PackageReference Include="Microsoft.AspNetCore" Version="1.1.2" />

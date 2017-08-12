@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 
 namespace LeftRightGo.Controllers
 {
@@ -11,6 +7,11 @@ namespace LeftRightGo.Controllers
         public IActionResult Index()
         {
             return View();
+        }
+
+        public IActionResult SetName(string name)
+        {
+            return RedirectToAction("Index", "Room", new { id = 1 });
         }
 
         public IActionResult Error()
