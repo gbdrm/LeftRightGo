@@ -15,6 +15,8 @@ namespace LeftRightGo.Data
         {
         }
 
+        public DbSet<Room> Rooms { get; set; }
+
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
